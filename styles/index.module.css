@@ -1,0 +1,122 @@
+#page {
+  display: flex;
+  flex-direction: column;
+}
+
+#landingArea {
+  min-height: 40vh;
+  max-height: 70vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* flex: 1; */
+}
+
+.landingAreaCarouselImg {
+  height: auto;
+  min-height: 40vh;
+  width: 100%;
+  opacity: 0.9;
+  display: none;
+
+  position: absolute;
+}
+
+@media screen and (min-width: 1200px) {
+  #landingArea {
+    min-height: 50vh;
+  }
+  .landingAreaCarouselImg {
+    min-height: 50vh;
+  }
+}
+
+#activeCarouselImg {
+  display: inline-block;
+}
+
+#titleArea {
+/* #title, #subtitle {  */
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+  z-index: 10;
+  top: 0;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+   background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0) 100%); 
+}
+
+#title {
+  /* top: -0.25em; */
+  margin-top: 0rem;
+  padding-top: 0.5rem;;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.75rem + 1.5vw);
+}
+
+#subtitle {
+  /* top: 2em; */
+  font-size: calc(1rem + 1vw);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  padding-bottom: calc(0.5rem + 1.25vw);
+  font-weight: 500;
+}
+
+.landingAreaLink {
+  /* position: relative; */
+  /* bottom: 0; */
+  /* float: left; */
+  z-index: 100;
+  margin-bottom: 1rem;
+  color: #555;
+  background-color: #fff;
+  border: 2px solid #555;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: calc(1rem + 1vw);
+  opacity: 0.75;
+
+  /* align-items: flex-end; */
+}
+
+#marketingTilesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+}
+
+.marketingTile {
+  padding: 0.75vw;
+  /* width: 45%; */
+  /* margin-left: 2%;
+  margin-top: 2%; */
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* border: 0.25vw solid #ddd; */
+  text-align: center;
+}
+
+.marketingTile > h2 {
+  font-size: calc(1rem + 1vw);
+  margin-bottom: 0;
+}
+
+.marketingTile > p {
+  flex: 1;
+  font-size: calc(0.9rem + 0.5vw);
+}
+
+.marketingTile > a {
+  color: #777;
+  font-size: calc(1rem + 0.75vw);
+}
+
+.marketingTile > p, .marketingTile > a {
+  
+}
