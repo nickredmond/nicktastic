@@ -40,11 +40,15 @@ const Index = () => {
         </div>
       </div>
       <div id={styles.marketingTilesContainer}>
-      <div className={styles.marketingTile}>
+        <div className={styles.marketingTile}>
           <h2>simple &amp; easy</h2>
           <p>Just give me a vague idea and I'll run with it. Or provide specific details if you prefer.</p>
           <Link href={"/request"}>Get started</Link>
         </div>
+      </div>
+      <div className={styles.footer}>
+        <Link className={styles.footerLink} href={"/contact"}>Contact</Link>
+        <Link className={styles.footerLink} href={"/about"}>About</Link>
       </div>
     </div>
   );
