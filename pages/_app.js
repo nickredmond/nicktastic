@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <Layout>
+    <Layout {...pageProps}>
       <Component {...pageProps} />
     </Layout>
   );
